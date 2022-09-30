@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="ttt.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bungee+Spice"
+    />
+    <script src="ttt.js" defer></script>
+  </head>
+  <body>
+    <div class="game">
+      <div class="header">
+        <h1>Tic Tac Toe</h1>
+        </div>
+        <div class="instructions">
+        <p>The first player to get 3 in a row,</p>
+        <p>column or diagonal wins!</p>
+      </div>
+        <div class="gameContainer">
+          <div class="scoreContainer">
+            <div>
+              <h2 class="scoreBoard">Score Board</h2>
+            </div>
+            <div>
+              <h2 id="X-score" class="scoreBoard"></h2>
+              <h2 id="O-score"></h2>
+            </div>
+          </div>
+          <div class="text">
+            <h2 class="currentPlayer" id="currentPlayer"></h2>
+            <h2 id="text"></h2>
+          </div>
+        </div>
+          <main class="gameBoard">
+            <section id="1" class="cell" onclick="play(1)"></section>
+            <section id="2" class="cell" onclick="play(2)"></section>
+            <section id="3" class="cell" onclick="play(3)"></section>
+            <section id="4" class="cell" onclick="play(4)"></section>
+            <section id="5" class="cell" onclick="play(5)"></section>
+            <section id="6" class="cell" onclick="play(6)"></section>
+            <section id="7" class="cell" onclick="play(7)"></section>
+            <section id="8" class="cell" onclick="play(8)"></section>
+            <section id="9" class="cell" onclick="play(9)"></section>
+          </main>
+          <div class="buttons">
+            <div class="restart">
+              <button id="restartBtn" onClick="initialiseGame()">
+                Play again
+              </button>
+            </div>
+            <div class="reset">
+              <button id="resetBtn" onClick="startOver()">Start over</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
