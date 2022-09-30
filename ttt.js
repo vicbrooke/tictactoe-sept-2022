@@ -37,7 +37,7 @@ function play(id) {
     if (gameWon()) {
       gameOver = true;
       currentPlayer.style.display = "none";
-      setText(`CONGRATULATIONS PLAYER ${winner}\nYOU ARE THE WINNER!! 🎉`);
+      setText(`🎉 CONGRATULATIONS 🎉\nPLAYER ${winner}\nYOU ARE THE WINNER!! `);
       if (player === "X") {
         playerXScore += 1;
         returnScore();
