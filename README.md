@@ -1,6 +1,6 @@
-#Tic Tac Toe game
+# Tic Tac Toe game
 
-##A game created using:
+## A game created using:
 
 - HTML
 - JavaScript
